@@ -1,0 +1,73 @@
+html, body {
+    margin: 0px;
+    height: 100%;
+    color: rgb(187, 159, 0);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #424d6e;
+}
+
+.header {
+    padding-left: 2rem;
+    background-color: #212638;
+}
+
+main {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+img {
+    width: 64px;
+    height: 64px;
+}
+
+.icon {
+    padding: 4px;
+    border-radius: 4px;
+    width: max-content;
+}
+
+.unit {
+    background-color: rgb(130 79 52);
+}
+
+.research {
+    background-color: rgb(50 128 107);
+}
+
+.resource {
+    background-color: #374157;
+}
+
+.left-side {
+    padding: 1rem;
+    background-color: #2f3a5e;
+    text-align: center;
+    box-shadow: 6px 0px 4px #1f273f;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-side .about {
+    border-bottom: 2px solid rgb(187, 159, 0);
+    
+}
+
+.right-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    height: 80%;
+    width: 70%;
+    background-color: #8a8988;
+    border-radius: 4px;
+    box-shadow: 0px 8px 4px #373738;
+}
