@@ -65,9 +65,115 @@ img {
 }
 
 .calculator {
-    height: 80%;
-    width: 70%;
+    height: 85%;
+    width: min(60%, 700px);
     background-color: #8a8988;
     border-radius: 4px;
     box-shadow: 0px 8px 4px #373738;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+}
+
+.calculator * {
+    border: 1px solid black;
+}
+
+.calculator > div {
+    padding: 1rem;
+}
+
+.calculator-display {
+    background-color: #212638;
+    width: 100%;
+    height: 100%;
+}
+
+.calculator-buttons {
+    display: grid;
+    grid-template-areas: "wood food gold stone"
+                         "7 8 9 clear"
+                         "4 5 6 multiply"
+                         "1 2 3 add"
+                         "0 equals equals subtract";
+}
+
+button {
+    background-color: red;
+    margin: 4px;
+}
+
+button#wood {
+    grid-area: wood;
+}
+
+button#food {
+    grid-area: food;
+}
+
+button#gold {
+    grid-area: 'gold';
+}
+
+button#stone {
+    grid-area: stone;
+}
+
+button#1 {
+    grid-area: 1;
+}
+
+button#2 {
+    grid-area: 2;
+}
+
+button#3 {
+    grid-area: 3;
+}
+
+button#4 {
+    grid-area: 4;
+}
+
+button#5 {
+    grid-area: 5;
+}
+
+button#6 {
+    grid-area: 6;
+}
+
+button#7 {
+    grid-area: 7;
+}
+
+button#8 {
+    grid-area: 8;
+}
+
+button#9 {
+    grid-area: 9;
+}
+
+button#0 {
+    grid-area: 0;
+}
+
+button#clear {
+    grid-area: clear;
+}
+
+button#multiply {
+    grid-area: multiply;
+}
+
+button#add {
+    grid-area: add;
+}
+
+button#subtract {
+    grid-area: subtract;
+}
+
+button#equals {
+    grid-area: equals;
 }
