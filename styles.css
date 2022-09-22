@@ -21,11 +21,6 @@ main {
     grid-template-columns: 1fr 4fr;
 }
 
-img {
-    width: 64px;
-    height: 64px;
-}
-
 .icon {
     padding: 4px;
     border-radius: 4px;
@@ -74,10 +69,6 @@ img {
     grid-template-rows: 1fr 3fr;
 }
 
-.calculator * {
-    border: 1px solid black;
-}
-
 .calculator > div {
     padding: 1rem;
 }
@@ -100,22 +91,31 @@ img {
 button {
     background-color: red;
     margin: 4px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 4vw;
+    line-height: 0;
 }
 
 button#wood {
     grid-area: wood;
+    background-image: url('images/resource-icons/wood.png');
 }
 
 button#food {
     grid-area: food;
+    background-image: url('images/resource-icons/food.png');
 }
 
 button#gold {
     grid-area: 'gold';
+    background-image: url('images/resource-icons/gold.png');
 }
 
 button#stone {
     grid-area: stone;
+    background-image: url('images/resource-icons/stone.png');
 }
 
 button#1 {
