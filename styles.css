@@ -81,12 +81,22 @@ main {
 
 .calculator-buttons {
     display: grid;
-    grid-template-areas: "wood food gold stone"
+    grid-template-rows: max(6vh, 60px) 1fr;
+}
+
+.calculator-buttons .top {
+    display: inherit; 
+    grid-template-areas: "berries sheep deer boar farm shore-fish deep-fish";
+}
+
+.calculator-buttons .bottom {
+    display: inherit;
+    grid-template-areas: "food wood gold stone"
                          "7 8 9 clear"
                          "4 5 6 multiply"
                          "1 2 3 add"
                          "0 equals equals subtract";
-}
+} 
 
 button {
     background-color: red;
@@ -98,14 +108,49 @@ button {
     line-height: 0;
 }
 
-button#wood {
-    grid-area: wood;
-    background-image: url('images/resource-icons/wood.png');
+button#berries {
+    grid-area: berries;
+    background-image: url('images/resource-icons/food_icons/berries.png')
+}
+
+button#sheep {
+    grid-area: sheep;
+    background-image: url('images/resource-icons/food_icons/sheep.png');
+}
+
+button#deer {
+    grid-area: deer;
+    background-image: url('images/resource-icons/food_icons/deer.png');
+}
+
+button#boar {
+    grid-area: boar;
+    background-image: url('images/resource-icons/food_icons/boar.png');
+}
+
+button#farm {
+    grid-area: farm;
+    background-image: url('images/resource-icons/food_icons/farm.png');
+}
+
+button#shore-fish {
+    grid-area: shore-fish;
+    background-image: url('images/resource-icons/food_icons/fish.png');
+}
+
+button#deep-fish {
+    grid-area: deep-fish;
+    background-image: url('images/resource-icons/food_icons/fish.png');
 }
 
 button#food {
     grid-area: food;
     background-image: url('images/resource-icons/food.png');
+}
+
+button#wood {
+    grid-area: wood;
+    background-image: url('images/resource-icons/wood.png');
 }
 
 button#gold {
