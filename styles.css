@@ -60,7 +60,7 @@ main {
 }
 
 .calculator {
-    height: 85%;
+    height: 90%;
     width: min(60%, 700px);
     background-color: #8a8988;
     border-radius: 4px;
@@ -108,39 +108,8 @@ button {
     line-height: 0;
 }
 
-button#berries {
-    grid-area: berries;
-    background-image: url('images/resource-icons/food_icons/berries.png')
-}
-
-button#sheep {
-    grid-area: sheep;
-    background-image: url('images/resource-icons/food_icons/sheep.png');
-}
-
-button#deer {
-    grid-area: deer;
-    background-image: url('images/resource-icons/food_icons/deer.png');
-}
-
-button#boar {
-    grid-area: boar;
-    background-image: url('images/resource-icons/food_icons/boar.png');
-}
-
-button#farm {
-    grid-area: farm;
-    background-image: url('images/resource-icons/food_icons/farm.png');
-}
-
-button#shore-fish {
-    grid-area: shore-fish;
-    background-image: url('images/resource-icons/food_icons/fish.png');
-}
-
-button#deep-fish {
-    grid-area: deep-fish;
-    background-image: url('images/resource-icons/food_icons/fish.png');
+button.active {
+    background-color: rgb(131, 0, 0);
 }
 
 button#food {
