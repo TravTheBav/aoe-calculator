@@ -2,13 +2,13 @@ let topButtons = document.querySelector(".calculator-buttons .top");
 const foodSources = ["berries", "sheep", "deer", "boar",
                      "farm", "shore-fish", "deep-fish"];
 
-foodSources.forEach(createTopButtons);
-setTopButtonStyles();
+// functions for the food source selection buttons
 
 function createTopButtons(value) {
     let button = document.createElement("button");
+    button.classList.add("food-type");
     button.id = value;
-    button.addEventListener("click", onClick);
+    button.addEventListener("click", onClickFoodType);
     topButtons.appendChild(button);
 }
 
@@ -23,7 +23,7 @@ function setTopButtonStyles() {
     }
 }
 
-function onClick() {
+function onClickFoodType() {
     this.classList.add('active');
     let length = topButtons.childElementCount;
     for (let i = 1; i <= length; i++) {
@@ -33,3 +33,23 @@ function onClick() {
         }
     }
 }
+
+// functions for the number buttons
+
+function setNumberButtonBehavior() {
+    let numberButtons = document.querySelectorAll(".number");
+    for (let i = 0; i < numberButtons.length; i++) {
+        numberButtons[i].addEventListener("click", onClickNumber);
+    }
+}
+
+function onClickNumber() {
+    let output = document.querySelector(".output");
+    output.textContent = output.textContent + this.textContent;
+    console.log("clicked");
+}
+
+foodSources.forEach(createTopButtons);
+setTopButtonStyles();
+setNumberButtonBehavior();
+
